@@ -1,0 +1,43 @@
+body{
+    background-color:beige;
+}
+h1{
+    padding-left: 22%;
+    color:black;
+    font-family:"urbana", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    transition: 0.38s;
+}
+p{
+    padding-left:23%;
+    text-align:left;
+    font-size: 20px;
+    font-family: "urbana", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    transition: 0.38s;
+}
+footer{
+    color:black;
+    font-size: 15px;
+    font-family: "urbana", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+audio{
+    padding-left: 23%;
+}
+p:hover, h1:hover{
+    background-color: orange;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+img{
+    height:15%;
+    width:auto;
+    float: right;
+    margin-top:1.5%;
+    margin: 10px;
+    padding-right: 25%;
+}
