@@ -1,0 +1,57 @@
+html{
+    color:grey;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+    /*the font that is listed second is the dominant font family*/
+    font-size:15pt;
+}
+h1{
+    color:black;
+    letter-spacing:-0.02em;
+    text-transform:capitalize;
+    text-indent:-1rem;
+    font-family: "vista-slab", serif;
+}
+p{
+    font-size:15pt;
+    line-height:1.4;
+}
+
+sup{ 
+    font-size:60%; /* superscript code*/
+    /* rem is relative to the root font size of html document*/
+    /* em is relative to the font size of its parent element (changing with the font size changes */
+}
+dfn{
+    font-weight:bold;
+    color:red;
+    text-transform:lowercase;
+}
+small{
+    font-style:italic;
+}
+aside{
+    text-align: center;
+}
+cite{
+    text-align:right;
+    display:block;
+}
+body{
+    margin:10%;
+}
+article{
+    margin: 6rem 0;
+}
+section{
+    margin: 2.5em 0;
+}
+a{
+    text-decoration:none;
+}
+code{
+    color:steelblue;
+}
+.fas{
+    color: greenyellow;
+}
