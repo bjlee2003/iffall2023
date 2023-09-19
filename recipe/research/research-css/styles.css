@@ -1,0 +1,26 @@
+img{
+    width:400px;
+    height:auto;
+}
+body{
+    background-color:#FFFDD0;
+}
+.headsection{
+    background-color: black;
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height:10vh;
+}
+h1{
+    font-family: "capitolina", serif;
+    font-weight: bold;
+    color:whitesmoke;
+}
+h2{
+    font-family: "capitolina", serif;
+    font-weight: light;
+}
+p{
+    font-family: "komet", sans-serif;
+}
