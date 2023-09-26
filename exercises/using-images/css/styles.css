@@ -7,7 +7,7 @@ img.full-screen{
     object-fit:cover;
 }
 div.background-image-example{
-    background-image: url="http://wudesign.me/resources/using-images/images/shelf-cloud-vertical.jpg";
+    background-image:url(http://wudesign.me/resources/using-images/images/shelf-cloud-vertical.jpg);
     padding-top: 10%;
     padding-right: 5%;
     padding-bottom: 45%;
