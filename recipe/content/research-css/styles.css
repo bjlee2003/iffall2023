@@ -1,0 +1,39 @@
+img{
+    width:280px;
+    height:auto;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+body{
+    background-color:#FFFDD0;
+}
+.headsection{
+    background-color: black;
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height:10vh;
+}
+h1{
+    font-family: "capitolina", serif;
+    font-weight: bold;
+    color:whitesmoke;
+}
+h2{
+    font-family: "capitolina", serif;
+    font-weight: light;
+}
+p{
+    font-family: "komet", sans-serif;
+}
+.grid > li{
+    display: inline-block;
+    width:25%;
+    text-align:center;
+    font-size:0.8rem;
+    margin-bottom:1rem;
+}
+.using-inline-block{
+    font-size:0;
+}
