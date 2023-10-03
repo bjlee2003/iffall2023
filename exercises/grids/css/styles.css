@@ -1,0 +1,46 @@
+.grid > li > img{
+    width:90%;
+    height:auto;
+}
+.grid{
+    padding:0;
+}
+.grid > li{
+    display: block;
+    width:25%;
+    text-align:center;
+    font-size:0.8rem;
+    margin-bottom:1rem;
+}
+.using-floats li{
+    float:left;
+}
+.using-floats::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.grid > li{
+    display: inline-block;
+    width:25%;
+    text-align:center;
+    font-size:0.8rem;
+    margin-bottom:1rem;
+}
+.using-inline-block{
+    font-size:0;
+}
+.grid.using-flex > using-flex > li{
+    display:flex;
+    flex-wrap:wrap;
+}
+.using-flex{
+    font-size:0;
+}
+.grid.using-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.using-grid li{
+    width:100%;
+}
