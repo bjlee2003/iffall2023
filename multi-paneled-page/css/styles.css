@@ -1,0 +1,136 @@
+html{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+header{
+    color:beige;
+    background-color: rgba(0,0,0,.5);
+    background-image: url("../imgs/background_banner.jpeg");
+    background-position: center;
+    background-size:1500px;
+    text-align:center;
+}
+.first_section{
+    background-color:#FEBA4F;
+}
+.second_section{
+    background-color:beige;
+}
+.third_section{
+    background-color:rgba(0,0,0,0.4);
+}
+em{
+    font-style:italic;
+}
+h1,h2,h3,p{
+    margin:0;
+}
+
+.column_container{
+    width:960px;
+    margin:auto;
+    background-color:rgba(0,0,0,.2);
+}
+header .column_container{
+    text-align:center;
+    padding-top:152px;
+    padding-bottom:183px;
+}
+.first_section .column_container{
+    padding-top:42px;
+    padding-bottom:55px;
+}
+.second_section .column_container{
+    padding-top:41px;
+    padding-bottom:9px;
+}
+.cycling{
+    height:300px;
+    width:400px;
+    float:right;
+    margin-left:38px;
+    margin-right:1px;
+    margin-top:33px;
+    margin-bottom:39px;
+}
+h1{
+    font-size:80px;
+    font-weight:bold 700;
+}
+h2{
+    font-size:30px;
+    line-height:1.2;
+}
+h3{
+    text-align: center;
+    font-size:40px;
+}
+h4{
+    padding:0;
+    display: block;
+    font-size:20px;
+    margin: 16px 0px -6px 0px;
+}
+p{
+    margin-top:13px;
+    font-size:18px;
+    line-height:1.4;
+}
+.p1{
+    padding-top:19px;
+}
+.p2{
+    padding-top:3px;
+}
+.p3{
+    padding-top:3px;
+}
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    padding-bottom:40px;
+    row-gap:8px;
+    column-gap:61px;
+}
+.module{
+    margin:0;
+    list-style:none;
+}
+.text{
+    display:block;
+    width:430px;
+    margin-left:-11px;
+}
+li.module>img{
+    width:200px;
+    height:150px;
+    float:left;
+    margin: 16px 12px 0px -40px;
+}
+.third_section{
+    background-color:black;
+}
+.third_section>.column_container{
+    padding-top:40px;
+    padding-bottom:98px;
+}
+.third_section>.column_container>h3{
+    color:white;
+}
+.block{
+    color:white;
+    font-size:26px;
+    text-align:center;
+    padding-top:20px;
+    padding-left:121px;
+    padding-right:121px;;
+}
+footer>p{
+    color:#FEBA4F;
+    font-size:18px;
+    padding-left:248px;
+    padding-top:29px;
+    padding-bottom:40px;
+}
+footer{
+    background-color:white;
+}
