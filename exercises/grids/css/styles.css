@@ -30,7 +30,7 @@
 .using-inline-block{
     font-size:0;
 }
-.grid.using-flex > using-flex > li{
+.grid.using-flex > li{
     display:flex;
     flex-wrap:wrap;
 }
