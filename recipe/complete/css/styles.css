@@ -46,8 +46,8 @@ p{
     width: 144px;
     text-decoration: none;
     position:absolute;
-    background-color:whitesmoke;
-    color:rgba(0,0,0,0.95);
+    background-color:rgba(0,0,0,0.85);
+    color:whitesmoke;
     padding:17px;
     font-size:20px;
     text-align: center;
@@ -97,6 +97,8 @@ h1{
     font-size:70px;
     text-align:center;
     width:400px;
+    background-color:rgba(0,0,0,0.75);
+    padding:15px 30px 20px 30px;
 }
 h2{
     font-family: "komet", serif;
@@ -314,6 +316,9 @@ iframe{
         padding:0;
         row-gap:30px;
     }
+    .instructionssection{
+        margin-top:50px;
+    }
 }
 @media only screen and (min-width:700px) and (max-width:1019px){
     .instructionssection{
@@ -462,7 +467,6 @@ iframe{
         transform: translate(-20%, -136%);
         font-family: "komet", serif;
         font-weight: bold;
-        color:whitesmoke;  
         font-size:80px;
         text-align:left;
         width:422px;
@@ -472,8 +476,6 @@ iframe{
         width: 374px;
         height: auto;
         text-decoration: none;
-        background-color: whitesmoke;
-        color: rgba(0,0,0,0.95);
         padding: 17px;
         font-size: 60px;
         text-align: center;
