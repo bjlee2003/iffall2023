@@ -297,9 +297,9 @@ iframe{
     border-color:black;
     border-style:double;
 }
-@media only screen and (min-width:1005px) and (max-width:1051px){
+@media(min-width:1020px){
     .instructionssection{
-        margin-top: 30px;
+        margin-top: 500px;
     }
     #steps{
         width:400px;
@@ -315,9 +315,9 @@ iframe{
         row-gap:30px;
     }
 }
-@media only screen and (min-width:776px) and (max-width:1004px){
+@media only screen and (min-width:700px) and (max-width:1019px){
     .instructionssection{
-        margin-top:350px;
+        margin-top:800px;
     }
     #steps{
         width:400px;
@@ -333,10 +333,10 @@ iframe{
         row-gap:30px;
     }
 }
-@media only screen and (min-width:687px) and (max-width:775px){
+@media only screen and (min-width:787px) and (max-width:790px){
 /* smalller desktop screens */
     #instructionsheader{
-        margin-top:550px;
+        margin-top:1000px;
         display:block;
         padding:20px 30px 20px 30px;
         background-color:black;
@@ -379,7 +379,7 @@ iframe{
         column-gap:90px;
     }
 }
-@media only screen and (min-width:437px) and (max-width:686px){
+@media only screen and (min-width:437px) and (max-width:786px){
 /* tablet screens */
     #movietitle{
         text-align:left;
@@ -400,7 +400,7 @@ iframe{
         height:auto;
     }
     .instructionssection{
-        margin-top: 460px;
+        margin-top: 1000px;
     }
 }
 @media only screen and (min-width:391px) and (max-width:436px){
@@ -409,7 +409,7 @@ iframe{
         height:auto;
     }
     .instructionssection{
-        margin-top: 850px;
+        margin-top: 700px;
     }
 }
 @media(max-width: 390px){ 
