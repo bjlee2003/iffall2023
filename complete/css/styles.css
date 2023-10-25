@@ -1,0 +1,556 @@
+html{
+    scroll-behavior:smooth;
+    background-color:#f4f4f7;
+}
+
+img.backgroundimage{
+    display:flex;
+    max-width:1000px;
+    width:auto;
+    height:auto;
+    margin:auto;
+    transform: translate(-2%, -8px);
+}
+h3{
+    font-family: "komet", sans-serif;
+    font-style:bold;
+}
+p{
+    font-family: "komet", sans-serif;
+    line-height:1.3;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+.headsection{ 
+    display:grid;
+    flex:wrap;
+    text-align: center;
+    height:38vh;
+}
+
+.headcontainer{
+    max-width:3024px;
+    height:auto;
+    width:100%
+}
+
+#movietitle{
+    text-align:left;
+    padding-bottom:35px;
+
+}
+
+.button {
+    font-family: "komet", sans-serif;
+    display: inline-block;
+    width: 144px;
+    text-decoration: none;
+    position:absolute;
+    background-color:whitesmoke;
+    color:rgba(0,0,0,0.95);
+    padding:17px;
+    font-size:20px;
+    text-align: center;
+    opacity: 0.5;
+    transition: 0.3s;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40px);
+}
+
+.button:hover {opacity: 1}
+
+.scroll-container{
+    width:100%;
+    margin-left:1.8%;
+}
+.scroll-page {
+    height: 100%;
+    width:100%;
+}
+.secondpage > #ingredients > h2{
+    background-color:black;
+    color:whitesmoke;
+    padding:20px 20px 20px 20px;
+    text-align:center;
+}
+.secondpage > #equipment > h2{
+    background-color:black;
+    color:whitesmoke;
+    padding: 20px;
+}
+#allergens{
+    font-size:10px;
+    padding-top:40px;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -320px);
+    font-family: "komet", serif;
+    font-weight: bold;
+    color:whitesmoke;  
+    font-size:70px;
+    text-align:center;
+    width:400px;
+}
+h2{
+    font-family: "komet", serif;
+    font-weight: light;
+    font-size:20px;
+}
+.pageheader{
+    display:grid;
+    flex:wrap;
+    place-items:center;
+    margin-bottom:200px;
+}
+
+.firstpage{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    padding-bottom:40px;
+    row-gap:40px;
+    column-gap:80px;
+    margin-right:auto;
+    margin-left:auto;
+    justify-content:center;
+    margin-top:200px;
+}
+    .dishdescription{
+        width:500px;
+        margin-right:40px;
+        border-style:double;
+        border-width:5px;
+        padding:20px;
+    }
+    .dishlogistics{
+        padding-top:30px;
+        color:whitesmoke;
+        font-size:30px;
+        text-align:left;
+        line-height:0.4;
+        width:375px;
+    }
+    p#author{
+        padding-right:30px;
+        padding-left:30px;
+        padding-top:20px;
+        padding-bottom:20px;
+        font-size:20px;
+        background-color:rgba(0,0,0,0.95);
+        line-height:1.3;
+        text-align:left;
+    }
+
+    b#title{
+        font-size:30px;
+        line-height:1.4;
+        text-align:left;
+    }
+    #estimatedcookingtime{
+        line-height:0px;
+        padding-top:30px;
+        padding-bottom:30px;
+        text-align:center;
+        background-color:rgba(0,0,0,0.95);
+        font-size:20px;
+    }
+    .recipesource{
+        text-align:right;
+        font-size:13px;
+        padding-top:10px;
+        color:black;
+    }
+
+video{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    width:849px;
+    height:auto;
+}
+
+li{
+    list-style:none;
+}
+.grid > li{
+    display: inline-block;
+    width:25%;
+    text-align:center;
+    font-size:0.8rem;
+    margin-bottom:1rem;
+}
+.using-inline-block{
+    font-size:0;
+}
+.movieclip{
+    margin-right:auto;
+    margin-left:auto;
+    display:flex;
+    flex-direction:column;
+    width:800px;
+    padding:0;
+}
+.movieclip > .dishdescription{
+    width:800px;
+}
+.secondpage{
+    margin-top:80px;
+    display:flex;
+    flex-wrap:wrap;
+    column-gap:90px;
+    justify-content:center;
+    padding:0;
+}
+#prep{
+    width:350px;
+    height:auto;
+}
+#prepsection{
+    padding:10px 20px 10px 20px;
+    border:5px;
+    border-color:black;
+    border-style:double;
+}
+.secondpage > #ingredients{
+    width: 270px;
+}
+.stackedimages{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column; 
+    justify-content:left;
+    padding:0;
+    row-gap:35px;
+}
+#instructionsheader{
+    display:block;
+    padding:20px 30px 20px 30px;
+    background-color:black;
+    color:whitesmoke;
+    text-align:left;
+    width:100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.instructions{
+    margin-top:40px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    column-gap:100px;
+    width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    row-gap:40px;
+}
+#steps{
+    width:400px;
+    height:auto;
+}
+.step{
+    width:200px;
+    padding:0px;
+}
+iframe{
+    margin-top: 80px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    width:560px;
+    height:315px; 
+}
+#tipsforstorage{
+    margin-top:80px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:black;
+    color:whitesmoke;
+    padding:20px 30px 20px 30px;
+    width: 150px;
+}
+.storagetext{
+    margin-top:50px;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    column-gap:90px;
+}
+.storagetext > li > p{ 
+    width:470px;
+}
+.storagetext > li > img{
+    width:300px;
+    height:auto;
+    border:5px;
+    border-color:black;
+    border-style:double;
+}
+@media only screen and (min-width:1005px) and (max-width:1051px){
+    .instructionssection{
+        margin-top: 30px;
+    }
+    #steps{
+        width:400px;
+        height:auto;
+    }
+    .secondpage{
+        margin-top:80px;
+        display:flex;
+        flex-wrap:wrap;
+        column-gap:90px;
+        justify-content:center;
+        padding:0;
+        row-gap:30px;
+    }
+}
+@media only screen and (min-width:776px) and (max-width:1004px){
+    .instructionssection{
+        margin-top:350px;
+    }
+    #steps{
+        width:400px;
+        height:auto;
+    }
+    .secondpage{
+        margin-top:80px;
+        display:flex;
+        flex-wrap:wrap;
+        column-gap:90px;
+        justify-content:center;
+        padding:0;
+        row-gap:30px;
+    }
+}
+@media only screen and (min-width:687px) and (max-width:775px){
+/* smalller desktop screens */
+    #instructionsheader{
+        margin-top:550px;
+        display:block;
+        padding:20px 30px 20px 30px;
+        background-color:black;
+        color:whitesmoke;
+        text-align:left;
+        width:100px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .instructions{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+        justify-content: left;
+        column-gap:60px;
+        width:700px;
+    }
+    #steps{
+        width:250px;
+        height:auto;
+    }
+    .secondpage{
+        margin-top:80px;
+        display:flex;
+        flex-wrap:wrap;
+        column-gap:90px;
+        justify-content:center;
+        padding:0;
+        row-gap:30px;
+    }
+    .storagetext{
+        margin-top:20px;
+        justify-content: center;
+        margin-left:auto;
+        margin-right:auto;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+        row-gap:20px;
+        column-gap:90px;
+    }
+}
+@media only screen and (min-width:437px) and (max-width:686px){
+/* tablet screens */
+    #movietitle{
+        text-align:left;
+        margin-left:155px;
+    }
+    video{
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+        width:480px;
+        height:auto;
+    }
+    .movieclip > .dishdescription{
+        width:450px;
+    }
+    #steps{
+        width:250px;
+        height:auto;
+    }
+    .instructionssection{
+        margin-top: 460px;
+    }
+}
+@media only screen and (min-width:391px) and (max-width:436px){
+    #steps{
+        width:250px;
+        height:auto;
+    }
+    .instructionssection{
+        margin-top: 850px;
+    }
+}
+@media(max-width: 390px){ 
+    /* iphone screen size */
+    .recipesource{
+        text-align:left;
+        font-size:15px;
+        padding-top:10px;
+        color:black;
+    }
+    .firstpage{
+        width:400px;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        padding-bottom:40px;
+        row-gap:40px;
+        margin-right:auto;
+        margin-left:auto;
+        justify-content:center;
+    }
+    .dishdescription{
+        width:800px;
+        margin-right:40px;
+        border-style:double;
+        border-width:5px;
+        padding:20px;
+        font-size:20px;
+    }
+    .dishlogistics{
+        padding-top:130px;
+        color:whitesmoke;
+        font-size:30px;
+        text-align:left;
+        line-height:0.4;
+        width:375px;
+    }
+    img.backgroundimage{
+        display:flex;
+        max-width:1300px;
+        width:auto;
+        height:auto;
+        margin:auto;
+        transform: translate(12%, -8px);
+    }
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-20%, -136%);
+        font-family: "komet", serif;
+        font-weight: bold;
+        color:whitesmoke;  
+        font-size:80px;
+        text-align:left;
+        width:422px;
+    }
+    .button {
+        display: inline-block;
+        width: 374px;
+        height: auto;
+        text-decoration: none;
+        background-color: whitesmoke;
+        color: rgba(0,0,0,0.95);
+        padding: 17px;
+        font-size: 60px;
+        text-align: center;
+        opacity: 0.5;
+        transition: 0.3s;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(61%, -75%);
+    }
+    .headsection{ 
+        display:grid;
+        justify-content:center;
+        height:38vh;
+    }
+    #estimatedcookingtime{
+        line-height: 41px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        text-align: center;
+        background-color: rgba(0,0,0,0.95);
+    }
+    video{
+        margin-left:auto;
+        margin-right:auto;
+        width:100%;
+        height:auto;
+        max-width:600px;
+    }
+    #movietitle{
+        text-align:left;
+        margin-right:auto;
+        margin-left:100px;
+    }
+    .movieclip > .dishdescription{
+        width:800px;
+        margin-left:50px;
+    }
+    #instructionsheader{
+        display:block;
+        padding:20px 30px 20px 30px;
+        background-color:black;
+        color:whitesmoke;
+        text-align:left;
+        width:100px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:654px;
+    }
+    .secondpage{
+        margin-left:225px;
+        column-gap:0px;
+        flex-direction:column;
+    }
+    .secondpage > #ingredients {
+        width: 500px;
+    }
+    .instructions{
+        margin-left:118px;
+    }
+    iframe{
+        margin-top: 80px;
+        margin-left:200px;
+        margin-right:200px;
+        display:block;
+        width:560px;
+        height:315px; 
+    }
+    #tipsforstorage{
+        margin-top:80px;
+        margin-left:378px;
+    }
+    .storagetext{
+        margin-top:50px;
+        margin-left:447px;
+    }
+}
