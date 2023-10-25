@@ -515,6 +515,9 @@ iframe{
         width:800px;
         margin-left:50px;
     }
+    .instructionssection{
+        margin-top:1098px;
+    }
     #instructionsheader{
         display:block;
         padding:20px 30px 20px 30px;
