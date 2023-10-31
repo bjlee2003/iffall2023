@@ -1,0 +1,520 @@
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+     font-size: 30px;
+     margin-bottom: 40px;
+}
+
+.button_container {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+a{
+    text-decoration:none;
+}
+
+a#btn_spotify {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 40px 0 40px;
+    background-color: #2ebd59;
+    border: 2px solid #2ebd59;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a#btn_spotify:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+a#btn_amazon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 75px;
+    padding-top: 8px;
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    transition: all .2s;
+}
+
+a#btn_amazon:hover {
+    background-color: #fc9a18;
+}
+
+a#btn_twitter {
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 105px;
+    padding: 10px 30px 0 30px;
+    background-color: #56cdf1;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_twitter:hover {
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+    background: rgb(46,191,236); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(46,191,236,1) 0%, rgba(40,165,203,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+a#btn_indiegogo {
+    display: inline-block;
+    position: relative;
+    margin:auto;
+    margin-top: 100px;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #eb1478;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -2px;
+    transition: all .2s;
+}
+
+a#btn_indiegogo:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #eb1478;
+    transition: all .5s;
+}
+
+a#btn_indiegogo:hover {
+    color: #fff;
+}
+
+a#btn_indiegogo:hover:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+a#btn_indiegogo span {
+    position: relative;
+    z-index: 10;
+}
+/* ------------------------------------- Apple Button ----------------------------------- */
+
+a#btn_apple{
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 75px;
+    padding-top: 17px;
+    color:rgba(0,0,0,1);
+    background-color:white;
+    text-align: center;
+    font-size: 60px;
+}
+
+a#btn_apple:hover{
+    background-color:black;
+    color: white;
+    animation-name:bounce;
+    animation-duration:2s;
+}
+
+@keyframes bounce{
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
+
+/* -------------------------------------- Instagram --------------------------------------https://codepen.io/nelledejones/pen/gOOPWrK*/
+
+a#instagram{
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 75px;
+    padding-top: 17px;
+    background-image:url(images/instagram.png);
+    background-size:cover;
+    text-align: center;
+    font-size: 60px;
+    transition: all 0.2s;
+    opacity:0.5;
+}
+
+#instagram:hover{
+    opacity:1;
+    animation-name:shake;
+    animation-duration:1.5s;
+    animation-iteration-count:infinite;
+}
+@keyframes shake {
+    30% { transform: scale(1.2); }
+    40%, 60% { transform: rotate(-20deg) scale(1.2); }
+    50% { transform: rotate(20deg) scale(1.2); }
+    70% { transform: rotate(0deg) scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+  /* -------------------------------------- NPR --------------------------------------------- */
+
+@font-face {
+    font-family: "Trebuchet MS Bold";
+    src: url("https://db.onlinewebfonts.com/t/ffdfee58eaaf4d144d09221c931d9e48.eot");
+    src: url("https://db.onlinewebfonts.com/t/ffdfee58eaaf4d144d09221c931d9e48.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ffdfee58eaaf4d144d09221c931d9e48.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ffdfee58eaaf4d144d09221c931d9e48.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/ffdfee58eaaf4d144d09221c931d9e48.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ffdfee58eaaf4d144d09221c931d9e48.svg#Trebuchet MS Bold")format("svg");
+}
+.npr{
+    font-family: "Trebuchet MS Bold";
+    font-size:65px;
+    text-align:center;
+    padding-top:40%;
+}
+.title-word{
+    animation: color-animation 2s linear infinite;
+}
+
+.n{     
+    padding:0px 0px 7px 20px;
+    color:black;
+    border-style:solid;
+    border-color: #FF2400;
+    border-width:4px; 
+    border-width:4px 4px 4px 4px; 
+    transition:0.5s smooth;
+}
+.p{
+    padding:0px 0px 7px 20px;
+    color:black;
+    border-style:solid;
+    border-color: #4169E1;
+    border-width:4px 4px 4px 4px; 
+    transition:0.5s smooth;
+}
+.r{
+    padding:0px 25px 7px 20px;
+    color:black;
+    border-style:solid;
+    border-color: black;
+    border-width:4px 4px 4px 4px; 
+    transition:0.5s smooth;
+}
+
+
+.npr:hover{
+    .n{
+        padding:0px 0px 7px 20px;
+        color:white;
+        --color-1: #FF2400;
+        --color-2: black;
+        --color-3: #4169E1;
+        border:none;
+    }
+    .p{
+        padding:0px 0px 7px 20px;
+        color:white;
+        --color-1: #4169E1;
+        --color-2: #FF2400;
+        --color-3: black;
+        border:none;
+    }
+    .r{
+        padding:0px 25px 7px 20px;
+        color:white;
+        --color-1: black;
+        --color-2: #4169E1;
+        --color-3: #FF2400;
+        border:none;
+    }
+}
+
+@keyframes color-animation {
+    0%    {background-color: var(--color-1)}
+    32%   {background-color: var(--color-1)}
+    33%   {background-color: var(--color-2)}
+    65%   {background-color: var(--color-2)}
+    66%   {background-color: var(--color-3)}
+    99%   {background-color: var(--color-3)}
+    100%  {background-color: var(--color-1)}
+}
+
+/* ----------------------------------- Tesla --------------------------------------- https://codepen.io/nelledejones/pen/gOOPWrK */
+
+#tesla{
+    display: block;
+    width: 120px;
+    height: 120px;
+    box-sizing:border-box;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 75px;
+    background-color:rgba(0,0,0,0.5);
+    padding: 17px;
+    background-image:url(images/tesla.png);
+    background-size:cover;
+    text-align: center;
+    font-size: 60px;
+    animation: spin 1s infinite linear;
+    transition:all 1s;
+}
+
+/* https://dev.to/jackharner/pausing-css-animations-on-hover-4bi6 */
+
+#tesla:hover{
+    background-color:rgba(0,0,0,0.8);
+    width: 160px;
+    height: 160px;
+    animation: spin infinite 15s linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Cartoon Network */
+
+#cn{
+    display: block;
+    width:200px;
+    height:100px;
+    margin-left:auto;
+    background-image:url(images/cartoonnetwork.png);
+    background-size:cover;
+    text-align: center;
+    font-size: 60px;
+    transition: all 0.2s;
+}
+
+#cn:hover{
+    animation: hinge 2s ease infinite;
+}
+
+  @keyframes hinge {
+    0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; }  
+    20%, 60% { transform: rotate(80deg); transform-origin: top left; animation-timing-function: ease-in-out; }  
+    40% { transform: rotate(60deg); transform-origin: top left; animation-timing-function: ease-in-out; } 
+    80% { transform: rotate(60deg) translateY(0); opacity: 1; transform-origin: top left; animation-timing-function: ease-in-out; } 
+    100% { transform: translateY(700px); opacity: 0; }
+  }
+
+  /* ------------------------The Tonight Show--------------------------------- */
+
+.tnshow{
+    display: block;
+    width:200px;
+    height:200px;
+    border-radius:170px;
+    margin-left:auto;
+    background-image:url(images/tonightshow.png);
+    background-color:black;
+    background-size:cover;
+    text-align: center;
+    font-size: 60px;
+    transition: all 0.2s;
+    opacity:0.7;
+}
+
+.tnshow:hover{
+    width:250px;
+    height:250px;
+    -moz-box-shadow: 0 0 10px yellow;
+    -webkit-box-shadow: 0 0 10px white;
+    box-shadow: 0px 0px 20px yellow;
+    opacity:1;
+}
+
+/* ---------------------electra---------------- */
+
+.electra{
+    display: block;
+    width:auto;
+    height:100px;
+    margin-top:70px;
+    background-image:url(images/electra.png);
+    background-size:cover;
+    text-align: center;
+    transition: all 0.2s;
+    opacity:1;
+}
+.electra:hover{
+    animation-name:pulse;
+    animation-duration:2s;
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+        box-shadow: 0 0 0 0px rgba(255,255,255,0.7);
+    }
+    70%{
+        transform:scale(0.9);
+        box-shadow: 0 0 0 10px #00FFFF;
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* -----------------------The New Yorker------------------ */
+
+.newyorker{
+    display: block;
+    width:auto;
+    height:100px;
+    margin-top:40px;
+    background-image:url(images/thenewyorker.png);
+    background-size:cover;
+    text-align: center;
+    transition: all 0.2s;
+    opacity:1;
+}
+
+.newyorker:hover{
+    transition:all 2s;
+    animation: rocking infinite 3s linear;
+}
+
+.boat{
+    width:100px;
+    position:absolute;
+    height:auto;
+    animation: rocking infinite 3s linear;
+}
+
+@keyframes rocking {
+    0%{
+        transform:translate(500px,-250px);
+        transform:rotate(0deg);
+    }
+    30%{
+        transform:translate(500px,-250px);
+        transform:rotate(10deg);
+    }
+    60%{
+        transform:translate(500px,-250px);
+        transform:rotate(-5deg);
+    }
+
+}
+
+@keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ } 
+
+ /* MotorTrend */
+
+ .motortrend{
+    display: block;
+    margin-top:100px;
+    height:40px;
+    width:200px;
+    background-image:url(images/motortrend-logo-aug-2020.png);
+    background-size:cover;
+    text-align: center;
+    opacity:1;
+}
+
+.motortrend:hover{
+    animation:zooming infinite 1.5s ease-in-out;
+}
+
+@keyframes zooming{
+    0% {transform:translate(0px); }
+    
+    50%{transform:translate(70px);}
+
+    100%{transform:translate(0px);}
+}
+
+/* ------------------------------Ideo---------------------- */
+
+.ideo{
+    display: block;
+    margin-top:30px;
+    margin-left:30px;
+    height:200px;
+    width:200px;
+    background-image:url(images/ideo.png);
+    background-size:cover;
+    text-align: center;
+    opacity:30%;
+    transition: all 0.8s linear;
+}
+.o{
+    position:absolute;
+    height:100px;
+    width:auto;
+    margin-top:131px;
+    margin-left:3px;
+    opacity:100%;
+}
+.ideo:hover{
+    opacity:1;
+}
