@@ -246,7 +246,7 @@ a#instagram{
     padding:0px 0px 7px 20px;
     color:black;
     border-style:solid;
-    border-color: #4169E1;
+    border-color: black;
     border-width:4px 4px 4px 4px; 
     transition:0.5s smooth;
 }
@@ -254,7 +254,7 @@ a#instagram{
     padding:0px 25px 7px 20px;
     color:black;
     border-style:solid;
-    border-color: black;
+    border-color: #4169E1;
     border-width:4px 4px 4px 4px; 
     transition:0.5s smooth;
 }
@@ -265,23 +265,23 @@ a#instagram{
         padding:0px 0px 7px 20px;
         color:white;
         --color-1: #FF2400;
-        --color-2: black;
-        --color-3: #4169E1;
+        --color-2: #4169E1;
+        --color-3: black;
         border:none;
     }
     .p{
         padding:0px 0px 7px 20px;
         color:white;
-        --color-1: #4169E1;
+        --color-1: black;
         --color-2: #FF2400;
-        --color-3: black;
+        --color-3: #4169E1;
         border:none;
     }
     .r{
         padding:0px 25px 7px 20px;
         color:white;
-        --color-1: black;
-        --color-2: #4169E1;
+        --color-1: #4169E1;
+        --color-2: black;
         --color-3: #FF2400;
         border:none;
     }
