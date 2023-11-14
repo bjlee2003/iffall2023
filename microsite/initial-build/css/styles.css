@@ -1,0 +1,375 @@
+/* color palette
+purple: #1a0138
+yellow: #B1560F
+pink: #EC5578 */
+
+html, body{
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+html{
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    background-color:linear-gradient(#1a0138, #EC5578);
+}
+
+body{
+    font-family: "obvia", sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    font-style: normal;
+    background-color:linear-gradient(#1a0138, #EC5578);
+}
+
+h1{
+    font-family: 'Streamster', sans-serif;
+    font-size:100pt;
+    text-align:center;
+    color:whitesmoke;
+    margin:0;
+    padding-top:200px;
+}
+
+h2{
+    font-family: "obvia-wide", sans-serif;
+    font-size: 23pt;
+    font-weight: 800;
+    font-style: normal;
+}
+
+p{
+    font-family: "obvia", sans-serif;
+    font-size: 15pt;
+    font-weight: 300;
+    font-style: normal;
+}
+
+li{
+    list-style:none;
+}
+
+/* ------------------------------------------------------------ scrolling sunset image ------------------------------------------------------- */
+
+header{
+    width:100%;
+    height:100vh;
+    background: url("../img/sunset.jpg") no-repeat 50% 50%;
+    background-size:cover;
+    background-attachment: fixed;
+    z-index:100;
+}
+
+.wrapper{
+    background-color:8102b;
+    margin:0;
+}
+
+a { color: white; text-decoration: none; }
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+  position:fixed;
+}
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* ------------------------------------------------------------ navigation bar ------------------------------------------------------- */
+
+.logo h1{
+    padding:18px 20px 10px 20px;
+}
+
+.logo h1 a{
+    font-size:15pt;
+    color:rgba(238, 238, 238, 0.5);
+    transition-duration:0.2s;
+}
+
+.logo h1 a:hover{
+    color:white;
+}
+
+.content{
+    width:100%;
+    margin:4em auto;
+    font-size:20px;
+    line-height:30px;
+    text-align:justify;
+}
+
+.logo{
+    position:fixed;
+    float:left;
+    color:white;
+    z-index:100;
+    translate: 0px 0px;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    background-color:rgba(0,0,0,1);
+}
+
+nav ul {
+    list-style-type: none;
+    background:rgba(0,0,0,0);
+    overflow:hidden;
+    color:white;
+    padding:0;
+    text-align:center;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    column-gap:30px;
+    transition: 1s;
+    z-index:99;
+}
+
+nav ul li{
+    display:inline-block;
+    padding:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:rgba(238, 238, 238, 0.5);
+    font-size:18px;
+    transition-duration:0.2s;
+}
+
+.navbar ul li a:hover, nav ul li a:active{
+    color:white;
+}
+
+/* ------------------------------------------------------------ home section ------------------------------------------------------- */
+
+.homeimage{
+    background-color:#1a0138;
+}
+
+.home{
+    margin-left:10%;
+    margin-right:15%;
+}
+
+img.car{
+    width:700px;
+    height:auto;
+}
+
+.glow {
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1a0138, 0 0 40px #1a0138, 0 0 50px #1a0138, 0 0 60px #1a0138, 0 0 70px #1a0138;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #1a0138, 0 0 40px #1a0138, 0 0 50px #1a0138, 0 0 60px #1a0138, 0 0 70px #1a0138, 0 0 80px #1a0138;
+    }
+  }
+
+.home h2{
+    color:white;
+    text-align:left;
+}
+
+.home p{
+    color:white;
+    line-height:28px;
+}
+
+.home-grid{
+    display:flex;
+    flex-direction:row;
+    padding-bottom:40px;
+    align-items:center;
+    column-gap:25%;
+}
+
+.statue{
+    width:1000px;
+    height:auto;
+}
+
+.characteristics-grid{
+    display:flex;
+    flex-direction:row;
+    padding-bottom:0px;
+    align-items:center;
+    column-gap:5%;
+    margin-bottom:0;
+}
+
+.home-grid ul li .statue{
+    column-gap:0;
+}
+
+#gradient{
+    background-image: linear-gradient(#1a0138, #B1560F);
+    padding-top:300px;
+    padding-bottom:400px;
+}
+
+.rocketsgrid{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    column-gap:280px;
+}
+
+.rocket{
+    width:100px;
+    height:auto;
+}
+
+@media (max-width:1460px){
+    .rocketsgrid{
+        column-gap:210px;
+    }
+    .home-grid{
+        column-gap:100px;
+    }
+    img.car{
+        width:500px;
+    }
+    img.statue{
+        width:500px;
+    }
+}
+
+/* ------------------------------------------------------------ legacy section ------------------------------------------------------- */
+
+.Legacy{
+    background-color: #B1560F;
+    padding-left:10%;
+    padding-right:15%;
+    padding-top:0px;
+}
+
+.gloworange {
+    text-align: center;
+    -webkit-animation: gloworange 1s ease-in-out infinite alternate;
+    -moz-animation: gloworange 1s ease-in-out infinite alternate;
+    animation: gloworange 1s ease-in-out infinite alternate;
+  }
+
+@keyframes gloworange {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff8400, 0 0 40px #ff8400, 0 0 50px #ff8400, 0 0 60px #ff8400, 0 0 70px #ff8400;
+    }
+    to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff8400, 0 0 40px #ff8400, 0 0 50px #ff8400, 0 0 60px #ff8400, 0 0 70px #ff8400, 0 0 80px #ff8400;
+    }
+  }
+
+.legacyGrid{
+    display:flex;
+    flex-direction:row;
+    padding-top:70px;
+    padding-bottom:0px;
+    align-items:center;
+    column-gap:25%;
+    margin-bottom:0;
+}
+
+.Legacy h2{
+    color:white;
+}
+
+.Legacy p{
+    color:white;
+    line-height:30px;
+}
+
+@media (max-width:1460px){
+    .Legacy{
+        padding-left:50px;
+        padding-right:150px;
+    }
+    .legacyGrid{
+        column-gap:100px;
+        align-items:start;
+    }
+    .statue2{
+        width: 300px;
+    }
+}
+
+/* ------------------------------------------------------------ present section ------------------------------------------------------- */
+
+#gradient2{
+    background-image: linear-gradient(#B1560F, #EC5578);
+    padding-top:300px;
+    padding-bottom:200px;
+}
+
+.Present{
+    background-color: #EC5578;
+}
+.gridPresent{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    column-gap:25%;
+    margin:0;
+    background-color:#EC5578;
+    padding-left:10%;
+    padding-right:15%;
+    padding-top:10px;
+    column-width: 4%;
+    color:white;
+}
+
+.glowpink {
+    text-align: center;
+    -webkit-animation: glowpink 1s ease-in-out infinite alternate;
+    -moz-animation: glowpink 1s ease-in-out infinite alternate;
+    animation: glowpink 1s ease-in-out infinite alternate;
+  }
+
+@keyframes glowpink {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #EC5578, 0 0 40px #EC5578, 0 0 50px #EC5578, 0 0 60px #EC5578, 0 0 70px #EC5578;
+    }
+    to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #EC5578, 0 0 40px #EC5578, 0 0 50px #EC5578, 0 0 60px #EC5578, 0 0 70px #EC5578, 0 0 80px #EC5578;
+    }
+  }
+
+.othercelebrity p{
+    translate:0px -184px;
+}
+
+/* ------------------------------------------------------------ sources section ------------------------------------------------------- */
+
+.Sources{
+    background-image:url(../img/lofi-girl-has-been-replaced-by-synthwave-boy.webp);
+    background-size:cover;
+    opacity:50%;
+    height:100%;
+    width:auto;
+    margin:0;
+}
