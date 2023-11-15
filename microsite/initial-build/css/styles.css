@@ -313,7 +313,7 @@ img.car{
         column-gap:100px;
         align-items:start;
     }
-    .statue2{
+    .legacyGrid li img{
         width: 300px;
     }
 }
@@ -359,6 +359,20 @@ img.car{
     }
   }
 
+  @media (max-width:1460px){
+    .Present{
+        padding-left:50px;
+        padding-right:150px;
+    }
+    .gridPresent{
+        column-gap:100px;
+        align-items:start;
+    }
+    .gridPresent li img{
+        width: 300px;
+    }
+}
+
 /* ------------------------------------------------------------ sources section ------------------------------------------------------- */
 
 .Sources{
@@ -385,4 +399,10 @@ img.car{
 
 .Sources h2 a{
     color:#EC5578;
+}
+
+@media (max-width:1460px){
+    .Sources h2{
+        transform: tranlsate(-50%, -30000%);
+    }
 }
