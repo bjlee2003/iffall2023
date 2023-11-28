@@ -12,7 +12,6 @@ html, body{
 html{
     overflow-x:hidden;
     scroll-behavior:smooth;
-    background-color:linear-gradient(#1a0138, #EC5578);
 }
 
 body{
@@ -32,6 +31,12 @@ h1{
     padding-top:200px;
 }
 
+@media (max-width:546px){
+    h1{
+        font-size:70pt;
+    }
+}
+
 h2{
     font-family: "obvia-wide", sans-serif;
     font-size: 23pt;
@@ -41,7 +46,7 @@ h2{
 
 p{
     font-family: "obvia", sans-serif;
-    font-size: 15pt;
+    font-size: 13pt;
     font-weight: 300;
     font-style: normal;
 }
@@ -59,11 +64,6 @@ header{
     background-size:cover;
     background-attachment: fixed;
     z-index:100;
-}
-
-.wrapper{
-    background-color:8102b;
-    margin:0;
 }
 
 a { color: white; text-decoration: none; }
@@ -91,18 +91,14 @@ a { color: white; text-decoration: none; }
 
 /* ------------------------------------------------------------ navigation bar ------------------------------------------------------- */
 
-.logo h1{
-    padding:18px 20px 10px 20px;
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
-.logo h1 a{
-    font-size:15pt;
-    color:rgba(238, 238, 238, 0.5);
-    transition-duration:0.2s;
-}
-
-.logo h1 a:hover{
-    color:white;
+li > h1{
+    padding:0px;
 }
 
 .content{
@@ -112,17 +108,11 @@ a { color: white; text-decoration: none; }
     line-height:30px;
     text-align:justify;
 }
-
-.logo{
+.navbar{
     position:fixed;
-    float:left;
-    color:white;
-    z-index:100;
-    translate: 0px 0px;
 }
-
 nav{
-    position:fixed;
+    position:absolute;
     width:100%;
     background-color:rgba(0,0,0,1);
 }
@@ -156,6 +146,27 @@ nav ul li a{
 
 .navbar ul li a:hover, nav ul li a:active{
     color:white;
+}
+
+@media(max-width:750px){
+    nav ul{
+        column-gap:15px;
+    }
+    nav ul li a{
+        font-size: 13pt;
+    }
+}
+
+@media (max-width:546px){
+    .logo h1 a{
+        font-size:9pt;
+    }
+    nav ul{
+        column-gap:0px;
+    }
+    nav ul li a{
+        font-size: 10pt;
+    }
 }
 
 /* ------------------------------------------------------------ home section ------------------------------------------------------- */
@@ -229,7 +240,7 @@ img.car{
 #gradient{
     background-image: linear-gradient(#1a0138, #B1560F);
     padding-top:300px;
-    padding-bottom:400px;
+    padding-bottom:300px;
 }
 
 .rocketsgrid{
@@ -245,18 +256,67 @@ img.car{
     height:auto;
 }
 
-@media (max-width:1460px){
+@media (max-width:2060px){
+    .home-grid{
+        column-gap: 12%;
+    }
+    img.statue{
+        width:500px;
+    }
+}
+
+@media (max-width:1700px){
     .rocketsgrid{
-        column-gap:210px;
+        column-gap:50px;
+        justify-content:center;
+    }
+    .characteristics-grid{
+        flex-wrap:wrap;
+        justify-content:center;
     }
     .home-grid{
-        column-gap:100px;
+        flex-wrap:wrap;
+        justify-content:center;
     }
     img.car{
         width:500px;
     }
     img.statue{
         width:500px;
+    }
+    .rocket{
+        width:50px;
+    }
+    #gradient{
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+}
+
+@media (max-width:546px){
+    img.car{
+        width:300px;
+    }
+    img.statue{
+        width:300px;
+    }
+    .rocketsgrid{
+        column-gap:30px;
+        justify-content:left;
+    }
+    
+    .rocket{
+        width:40px;
+        height:auto;
+    }
+    .home{
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .home-grid{
+        padding-bottom:20px;
+        align-items:center;
+        column-gap:0px;
     }
 }
 
@@ -288,8 +348,6 @@ img.car{
 .legacyGrid{
     display:flex;
     flex-direction:row;
-    padding-top:70px;
-    padding-bottom:0px;
     align-items:center;
     column-gap:5%;
     margin-bottom:0;
@@ -304,17 +362,35 @@ img.car{
     line-height:30px;
 }
 
+@media (max-width:2060px){
+    .legacyGrid{
+        column-gap: 12%;
+    }
+}
+
 @media (max-width:1460px){
     .Legacy{
         padding-left:50px;
         padding-right:150px;
     }
     .legacyGrid{
-        column-gap:100px;
-        align-items:start;
+        flex-wrap:wrap;
+        justify-content:center;
     }
     .legacyGrid li img{
         width: 300px;
+    }
+    p{
+        font-size:10pt;
+    }
+    
+}
+
+@media (max-width:546px){
+    .Legacy{
+        padding-left:5%;
+        padding-right:5%;
+        padding-top:0px;
     }
 }
 
@@ -358,18 +434,38 @@ img.car{
     text-shadow: 0 0 20px #fff, 0 0 30px #EC5578, 0 0 40px #EC5578, 0 0 50px #EC5578, 0 0 60px #EC5578, 0 0 70px #EC5578, 0 0 80px #EC5578;
     }
   }
+  @media (max-width:2060px){
+    .gridPresent{
+        column-gap: 12%;
+    }
+}
 
-  @media (max-width:1460px){
+@media (max-width:1460px){
+    .Present h1{ 
+        padding-right:35px;
+    }
     .Present{
         padding-left:50px;
         padding-right:150px;
     }
     .gridPresent{
-        column-gap:100px;
-        align-items:start;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
     }
     .gridPresent li img{
-        width: 300px;
+        width: 500px;
+    }
+}
+
+@media (max-width:546px){
+    .Present{
+        padding-left:5%;
+        padding-right:5%;
+    }
+    .gridPresent{
+        padding-left:0px;
+        padding-right:0px;
     }
 }
 
@@ -397,15 +493,29 @@ img.car{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index:100;
 }
 
 .Sources h2 a{
     color:#EC5578;
 }
 
+.Sources p{
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-121%, 60%);
+    z-index:100;
+}
+
 @media (max-width:1460px){
     .Sources h2{
-        transform: translate(-50%, -50%);
+        font-size:15pt;
+    }
+}
+
+@media (max-width:546px){
+    .Sources h2{
+        font-size:12pt;
     }
 }
