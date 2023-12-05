@@ -262,12 +262,16 @@ img.car{
     height:auto;
 }
 
-@media (max-width:2060px){
+@media (max-width:2280px){
     .home-grid{
         column-gap: 12%;
     }
     img.statue{
         width:500px;
+    }
+    #gradient{
+        padding-top:150px;
+        padding-bottom:150px;
     }
 }
 
@@ -275,6 +279,8 @@ img.car{
     .rocketsgrid{
         column-gap:50px;
         justify-content:center;
+        padding-top: 10px;
+        padding-bottom:10px;
     }
     .characteristics-grid{
         flex-wrap:wrap;
@@ -324,6 +330,10 @@ img.car{
         align-items:center;
         column-gap:0px;
     }
+    #gradient{
+        padding-top:50px;
+        padding-bottom:50px;
+    }
 }
 
 /* ------------------------------------------------------------ legacy section ------------------------------------------------------- */
@@ -368,9 +378,11 @@ img.car{
     line-height:30px;
 }
 
-@media (max-width:2060px){
+@media (max-width:2280px){
     .legacyGrid{
         column-gap: 12%;
+        flex-wrap:wrap;
+        justify-content:center;
     }
 }
 
@@ -389,7 +401,20 @@ img.car{
     p{
         font-size:10pt;
     }
-    
+    .legacyGrid li img{
+        width: 700px;
+    }
+}
+
+@media (max-width:880px){
+    .Legacy{
+        padding-left:5%;
+        padding-right:5%;
+        padding-top:0px;
+    }
+    .legacyGrid li img{
+        width: 350px;
+    }
 }
 
 @media (max-width:546px){
@@ -397,6 +422,9 @@ img.car{
         padding-left:5%;
         padding-right:5%;
         padding-top:0px;
+    }
+    .legacyGrid li img{
+        width: 300px;
     }
 }
 
@@ -406,16 +434,18 @@ img.car{
     background-image: linear-gradient(#B1560F, #EC5578);
     padding-top:300px;
     padding-bottom:200px;
+    padding-left:10%;
 }
 
 .Present{
     background-color: #EC5578;
+    padding-bottom:10%;
 }
 .gridPresent{
     display:flex;
     flex-direction:row;
     align-items:center;
-    column-gap:25%;
+    column-gap:5%;
     margin:0;
     background-color:#EC5578;
     padding-left:10%;
@@ -432,6 +462,11 @@ img.car{
     animation: glowpink 1s ease-in-out infinite alternate;
   }
 
+.gridPresent li img{
+    width:800px;
+    height:auto;
+}
+
 @keyframes glowpink {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #EC5578, 0 0 40px #EC5578, 0 0 50px #EC5578, 0 0 60px #EC5578, 0 0 70px #EC5578;
@@ -440,15 +475,22 @@ img.car{
     text-shadow: 0 0 20px #fff, 0 0 30px #EC5578, 0 0 40px #EC5578, 0 0 50px #EC5578, 0 0 60px #EC5578, 0 0 70px #EC5578, 0 0 80px #EC5578;
     }
   }
-  @media (max-width:2060px){
+  @media (max-width:2280px){
     .gridPresent{
         column-gap: 12%;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    #gradient2{
+        padding-top:150px;
+        padding-bottom:150px;
     }
 }
 
 @media (max-width:1460px){
     .Present h1{ 
         padding-right:35px;
+        padding-top:50px;
     }
     .Present{
         padding-left:50px;
@@ -461,6 +503,21 @@ img.car{
     }
     .gridPresent li img{
         width: 700px;
+    }
+    #gradient2{
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+}
+
+@media (max-width:1027px){
+    .gridPresent li img{
+        width: 450px;
+    }
+    .Present{
+        padding-left:5%;
+        padding-right:5%;
+        padding-top:0px;
     }
 }
 
@@ -475,6 +532,10 @@ img.car{
     }
     .gridPresent li img{
         width: 300px;
+    }
+    #gradient2{
+        padding-top:50px;
+        padding-bottom:50px;
     }
 }
 

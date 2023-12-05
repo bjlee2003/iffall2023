@@ -1,0 +1,591 @@
+/* color palette
+purple: #1a0138
+yellow: #B1560F
+pink: #EC5578 */
+
+html, body{
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+html{
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: "obvia", sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    font-style: normal;
+    background-color:linear-gradient(#1a0138, #EC5578);
+}
+
+h1{
+    font-family: 'Streamster', sans-serif;
+    font-size:100pt;
+    text-align:center;
+    color:whitesmoke;
+    margin:0;
+    padding-top:200px;
+}
+
+@media (max-width:546px){
+    h1{
+        font-size:70pt;
+    }
+}
+
+h2{
+    font-family: "obvia-wide", sans-serif;
+    font-size: 23pt;
+    font-weight: 800;
+    font-style: normal;
+}
+
+p{
+    font-family: "obvia", sans-serif;
+    font-size: 13pt;
+    font-weight: 300;
+    font-style: normal;
+}
+
+li{
+    list-style:none;
+}
+
+/* ------------------------------------------------------------ scrolling sunset image ------------------------------------------------------- */
+
+header{
+    width:100%;
+    height:100vh;
+    background: url("../img/sunset.jpg") no-repeat 50% 50%;
+    background-size:cover;
+    background-attachment: fixed;
+    z-index:100;
+}
+
+@media (max-width:546px){
+    header{
+        background-size:cover;
+    }
+}
+
+a { color: white; text-decoration: none; }
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+  position:fixed;
+}
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* ------------------------------------------------------------ navigation bar ------------------------------------------------------- */
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+li > h1{
+    padding:0px;
+}
+
+.content{
+    width:100%;
+    margin:4em auto;
+    font-size:20px;
+    line-height:30px;
+    text-align:justify;
+}
+.navbar{
+    position:fixed;
+}
+nav{
+    position:absolute;
+    width:100%;
+    background-color:rgba(0,0,0,1);
+}
+
+nav ul {
+    list-style-type: none;
+    background:rgba(0,0,0,0);
+    overflow:hidden;
+    color:white;
+    padding:0;
+    text-align:center;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    column-gap:30px;
+    transition: 1s;
+    z-index:99;
+}
+
+nav ul li{
+    display:inline-block;
+    padding:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:rgba(238, 238, 238, 0.5);
+    font-size:18px;
+    transition-duration:0.2s;
+}
+
+.navbar ul li a:hover, nav ul li a:active{
+    color:white;
+}
+
+@media(max-width:750px){
+    nav ul{
+        column-gap:15px;
+    }
+    nav ul li a{
+        font-size: 13pt;
+    }
+}
+
+@media (max-width:546px){
+    .logo h1 a{
+        font-size:9pt;
+    }
+    nav ul{
+        column-gap:0px;
+    }
+    nav ul li a{
+        font-size: 10pt;
+    }
+}
+
+/* ------------------------------------------------------------ home section ------------------------------------------------------- */
+
+.homeimage{
+    background-color:#1a0138;
+}
+
+.home{
+    margin-left:10%;
+    margin-right:15%;
+}
+
+img.car{
+    width:700px;
+    height:auto;
+}
+
+.glow {
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1a0138, 0 0 40px #1a0138, 0 0 50px #1a0138, 0 0 60px #1a0138, 0 0 70px #1a0138;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #1a0138, 0 0 40px #1a0138, 0 0 50px #1a0138, 0 0 60px #1a0138, 0 0 70px #1a0138, 0 0 80px #1a0138;
+    }
+  }
+
+.home h2{
+    color:white;
+    text-align:left;
+}
+
+.home p{
+    color:white;
+    line-height:28px;
+}
+
+.home-grid{
+    display:flex;
+    flex-direction:row;
+    padding-bottom:40px;
+    align-items:center;
+    column-gap:25%;
+}
+
+.statue{
+    width:1000px;
+    height:auto;
+}
+
+.characteristics-grid{
+    display:flex;
+    flex-direction:row;
+    padding-bottom:0px;
+    align-items:center;
+    column-gap:5%;
+    margin-bottom:0;
+}
+
+.home-grid ul li .statue{
+    column-gap:0;
+}
+
+#gradient{
+    background-image: linear-gradient(#1a0138, #B1560F);
+    padding-top:300px;
+    padding-bottom:300px;
+}
+
+.rocketsgrid{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    column-gap:280px;
+}
+
+.rocket{
+    width:100px;
+    height:auto;
+}
+
+@media (max-width:2280px){
+    .home-grid{
+        column-gap: 12%;
+    }
+    img.statue{
+        width:500px;
+    }
+    #gradient{
+        padding-top:150px;
+        padding-bottom:150px;
+    }
+}
+
+@media (max-width:1700px){
+    .rocketsgrid{
+        column-gap:50px;
+        justify-content:center;
+        padding-top: 10px;
+        padding-bottom:10px;
+    }
+    .characteristics-grid{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .home-grid{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    img.car{
+        width:500px;
+    }
+    img.statue{
+        width:500px;
+    }
+    .rocket{
+        width:50px;
+    }
+    #gradient{
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+}
+
+@media (max-width:546px){
+    img.car{
+        width:300px;
+    }
+    img.statue{
+        width:300px;
+    }
+    .rocketsgrid{
+        column-gap:30px;
+        justify-content:left;
+    }
+    
+    .rocket{
+        width:40px;
+        height:auto;
+    }
+    .home{
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .home-grid{
+        padding-bottom:20px;
+        align-items:center;
+        column-gap:0px;
+    }
+    #gradient{
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+}
+
+/* ------------------------------------------------------------ legacy section ------------------------------------------------------- */
+
+.Legacy{
+    background-color: #B1560F;
+    padding-left:10%;
+    padding-right:15%;
+    padding-top:0px;
+}
+
+.gloworange {
+    text-align: center;
+    -webkit-animation: gloworange 1s ease-in-out infinite alternate;
+    -moz-animation: gloworange 1s ease-in-out infinite alternate;
+    animation: gloworange 1s ease-in-out infinite alternate;
+  }
+
+@keyframes gloworange {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff8400, 0 0 40px #ff8400, 0 0 50px #ff8400, 0 0 60px #ff8400, 0 0 70px #ff8400;
+    }
+    to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff8400, 0 0 40px #ff8400, 0 0 50px #ff8400, 0 0 60px #ff8400, 0 0 70px #ff8400, 0 0 80px #ff8400;
+    }
+  }
+
+.legacyGrid{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    column-gap:5%;
+    margin-bottom:0;
+}
+
+.Legacy h2{
+    color:white;
+}
+
+.Legacy p{
+    color:white;
+    line-height:30px;
+}
+
+@media (max-width:2280px){
+    .legacyGrid{
+        column-gap: 12%;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+
+@media (max-width:1460px){
+    .Legacy{
+        padding-left:50px;
+        padding-right:150px;
+    }
+    .legacyGrid{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .legacyGrid li img{
+        width: 700px;
+    }
+    p{
+        font-size:10pt;
+    }
+    .legacyGrid li img{
+        width: 700px;
+    }
+}
+
+@media (max-width:880px){
+    .Legacy{
+        padding-left:5%;
+        padding-right:5%;
+        padding-top:0px;
+    }
+    .legacyGrid li img{
+        width: 350px;
+    }
+}
+
+@media (max-width:546px){
+    .Legacy{
+        padding-left:5%;
+        padding-right:5%;
+        padding-top:0px;
+    }
+    .legacyGrid li img{
+        width: 300px;
+    }
+}
+
+/* ------------------------------------------------------------ present section ------------------------------------------------------- */
+
+#gradient2{
+    background-image: linear-gradient(#B1560F, #EC5578);
+    padding-top:300px;
+    padding-bottom:200px;
+    padding-left:10%;
+}
+
+.Present{
+    background-color: #EC5578;
+    padding-bottom:10%;
+}
+.gridPresent{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    column-gap:5%;
+    margin:0;
+    background-color:#EC5578;
+    padding-left:10%;
+    padding-right:15%;
+    padding-top:10px;
+    column-width: 4%;
+    color:white;
+}   
+
+.glowpink {
+    text-align: center;
+    -webkit-animation: glowpink 1s ease-in-out infinite alternate;
+    -moz-animation: glowpink 1s ease-in-out infinite alternate;
+    animation: glowpink 1s ease-in-out infinite alternate;
+  }
+
+.gridPresent li img{
+    width:800px;
+    height:auto;
+}
+
+@keyframes glowpink {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #EC5578, 0 0 40px #EC5578, 0 0 50px #EC5578, 0 0 60px #EC5578, 0 0 70px #EC5578;
+    }
+    to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #EC5578, 0 0 40px #EC5578, 0 0 50px #EC5578, 0 0 60px #EC5578, 0 0 70px #EC5578, 0 0 80px #EC5578;
+    }
+  }
+  @media (max-width:2280px){
+    .gridPresent{
+        column-gap: 12%;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    #gradient2{
+        padding-top:150px;
+        padding-bottom:150px;
+    }
+}
+
+@media (max-width:1460px){
+    .Present h1{ 
+        padding-right:35px;
+        padding-top:50px;
+    }
+    .Present{
+        padding-left:50px;
+        padding-right:150px;
+    }
+    .gridPresent{
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+    }
+    .gridPresent li img{
+        width: 700px;
+    }
+    #gradient2{
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+}
+
+@media (max-width:1027px){
+    .gridPresent li img{
+        width: 450px;
+    }
+    .Present{
+        padding-left:5%;
+        padding-right:5%;
+        padding-top:0px;
+    }
+}
+
+@media (max-width:546px){
+    .Present{
+        padding-left:5%;
+        padding-right:5%;
+    }
+    .gridPresent{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .gridPresent li img{
+        width: 300px;
+    }
+    #gradient2{
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+}
+
+/* ------------------------------------------------------------ sources section ------------------------------------------------------- */
+
+.Sources{
+    background-size:cover;
+    height:100%;
+    width:auto;
+    margin:0;
+    padding-top:0;
+    position:relative;
+    background-color:rgba(0, 238, 238, 0.8);
+    background-image: url("../img/lofi-girl-has-been-replaced-by-synthwave-boy.webp");
+}
+
+.Sources img{
+    width:100%;
+    height:auto;
+}
+
+.Sources h2{
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Sources h2 a{
+    color:#EC5578;
+}
+
+.Sources p{
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-121%, 60%);
+    z-index:100;
+}
+
+@media (max-width:1460px){
+    .Sources h2{
+        font-size:15pt;
+    }
+}
+
+@media (max-width:546px){
+    .Sources h2{
+        font-size:12pt;
+    }
+}
